@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./custom.css" />
   </head>
   <body>
     <div class="central-div">
       <div class="image-div-before">
-        <!-- <h2>Before Cropping</h2> -->
+        <h2 class="after-h2">Background-cover</h2>
         <img
           id="uncropped-image"
-          src="./assets/image6.jpg"
+          src="./assets/doggo-asset.jpg"
           alt="random-image"
         />
       </div>
       <div class="image-div-after">
-        <!-- <h2 class="after-h2">After Cropping</h2> -->
+        <h2 class="after-h2">Background-contain</h2>
         <div>
-          <img id="image" src="./assets/image6.jpg" alt="random-image" />
+          <img
+            id="image"
+            src="./assets/doggo-asset.jpg"
+            alt="random-image"
+            style="object-fit: cover; width: 300px; object-position: 30px 31px"
+          />
         </div>
       </div>
     </div>
